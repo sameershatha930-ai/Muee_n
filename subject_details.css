@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    direction: rtl;
+    text-align: right;
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* القائمة الجانبية */
+.sidebar {
+    width: 280px;
+    background-color: white;
+    border-left: 1px solid #e0e0e0;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+    background-color: #0b4f34;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-align: right;
+    width: 100%;
+}
+
+.nav-btn.active {
+    background-color: #0b4f34;
+    color: white;
+}
+
+.nav-btn:hover:not(.active) {
+    background-color: #e2ede8;
+    color: #0b4f34;
+}
+
+/* زر العودة للمقررات (أخضر واضح وبارز أسفل القائمة) */
+.back-btn {
+    background-color: #0b4f34;
+    border: 1px solid #0b4f34;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: auto;
+}
+
+.back-btn:hover {
+    background-color: #083c27;
+    color: white;
+}
+
+/* المحتوى الرئيسي */
+.content-area {
+    flex-grow: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* تنسيق المربعات الموحدة للملفات، النقاش، والكويزات بلون جامعة تبوك */
+.files-container, .chat-container, .discussion-container, .quizzes-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    border: 1px solid #0b4f34;
+    border-radius: 10px;
+    background-color: #e8f5e9 !important;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h3 {
+    color: #0b4f34;
+}
+
+.add-btn {
+    background-color: #107c41;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #0b4f34;
+}
+
+.empty-msg {
+    color: #666;
+    text-align: center;
+    padding: 40px;
+    background: #fafafa;
+    border-radius: 6px;
+    border: 1px dashed #ccc;
+}

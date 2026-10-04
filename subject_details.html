@@ -1,0 +1,34 @@
+  <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المادة - جامعة تبوك</title>
+    <link rel="stylesheet" href="subject_details.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- القائمة الجانبية -->
+        <nav class="sidebar">
+            <div>
+                <h2 id="subjectTitle">اسم المادة</h2>
+                <div class="nav-links">
+                    <button class="nav-btn active" onclick="loadTab('files', event)">الملفات الدراسية</button>
+                    <button class="nav-btn" onclick="loadTab('discussion', event)">لوحة النقاش</button>
+                    <button class="nav-btn" onclick="loadTab('quizzes', event)">الكويزات والتدريبات</button>
+                </div>
+            </div>
+            <!-- زر العودة للمقررات في أسفل القائمة الجانبية بخلفية خضراء واضحة -->
+            <a href="courses.html" class="back-btn">العودة إلى المقررات</a>
+        </nav>
+
+        <!-- المحتوى الرئيسي (المربعات الخضراء المنظمة) -->
+        <main class="content-area" id="contentArea">
+            <!-- المحتوى يتغير ديناميكياً هنا -->
+        </main>
+       
+    </div>
+
+    <script src="subject_logic.js"></script>
+</body>
+</html>

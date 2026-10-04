@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل المادة - منصة مُعِين</title>
+  
+  <!-- ربط ملف التنسيقات CSS -->
+  <link rel="stylesheet" href="course_style.css">
+  <!-- إذا كانت التنسيقات مجمعة داخل style.css استخدمي السطر التالي بدلاً منه: -->
+   <link rel="stylesheet" href="style.css"> 
+   <link rel="stylesheet" href="course_style.css">
+</head>
+<body>
+
+  <div class="portal-container">
+    <header>
+      <h1 id="courseTitle">اسم المادة الدراسية</h1>
+    </header>
+
+    <nav class="course-tabs">
+      <button class="tab-btn active" onclick="showTab('files')">الملفات</button>
+      <button class="tab-btn" onclick="showTab('discussion')">لوحة النقاش</button>
+      <button class="tab-btn" onclick="showTab('quizzes')">الكويزات</button>
+    </nav>
+
+    <main id="tabContent" class="tab-content">
+      <!-- المحتوى سيتغير بناءً على التبويب المختار -->
+    </main>
+  </div>
+
+  <!-- ربط ملف الجافاسكربت -->
+  <script src="course_script.js"></script>
+
+</body>
+</html>
